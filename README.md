@@ -11,7 +11,7 @@ SuperOverlayの仕組みを使ったKMLを作成すれば、google mapsのよう
 
 作成例
 ------
-![表示例](https://github.com/tmizu23/tile2kml/blob/master/cjp.jpg)
+![表示例](https://raw.github.com/tmizu23/tile2kml/blob/master/cjp.jpg)
 
 
 プログラム
