@@ -1,6 +1,14 @@
 <?php
 mb_internal_encoding("UTF-8");
 
+
+//このプログラムを設置するパス
+/////////////////////////////////////////////////////////
+
+$phpurl = 'http://www.ecoris.co.jp/map/tile2kml.php';
+
+/////////////////////////////////////////////////////////
+
 $tileSize = 256;
 $originShift = 2 * pi() * 6378137 / 2.0;
 $initialResolution = 2 * pi() * 6378137 / $tileSize;
@@ -167,7 +175,7 @@ if($z<18){
 		$kml[] = ' </LatLonAltBox>';
 		$kml[] = ' </Region>';
 		$kml[] = ' <Link>';
-		$kml[] = ' <href>http://www.ecoris.co.jp/map/otm/tile2kml.php</href>';
+		$kml[] = ' <href>' . $phpurl . '</href>';
 		$kml[] = ' <httpQuery>x='. $nx . '&amp;y=' . $ny . '&amp;z=' . $nz . '&amp;t=' . $t . '&amp;c=' . $c .'</httpQuery>';
 		$kml[] = ' <viewRefreshMode>onRegion</viewRefreshMode>';
 		$kml[] = ' <viewFormat/>';
