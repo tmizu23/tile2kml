@@ -24,8 +24,8 @@ Dynamic Google Earth SuperOverlay for Ciber Japan Data
 
 設置方法
 ------
-+ tile2kml.phpとcjp.kmlの中の「ユーザー設定」の部分を設置するサーバーのURLに変更してください。
-+ tile2kml.phpをサーバーに設置してから、cjp.kmlをGoogle Earthで読み込んでください。
+* tile2kml.phpとcjp.kmlの中の「ユーザー設定」の部分を設置するサーバーのURLに変更してください。
+* tile2kml.phpをサーバーに設置してから、cjp.kmlをGoogle Earthで読み込んでください。
 
 プログラム説明
 -------
