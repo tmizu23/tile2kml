@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+
+<Style>
+<ListStyle>
+<ItemIcon><href>http://www.ecoris.co.jp/map/apple-touch-icon.png</href></ItemIcon>
+<listItemType>checkHideChildren</listItemType>
+</ListStyle>
+</Style>
+<open>1</open>
+<visibility>1</visibility>
+<name>自然環境調査で使うFOSS4G</name>
+<description>
+</description>
+
+ <NetworkLink>
+  <Link>
+   <href>http://www.ecoris.co.jp/map/tile2kml_prezen.php</href>
+   <httpQuery>x=0&amp;y=0&amp;z=0&amp;&amp;c=0</httpQuery>
+  </Link>
+ </NetworkLink>
+
+ <LookAt>
+  <longitude>139.35</longitude>
+  <latitude>37.55</latitude>
+  <altitude>25000</altitude>
+  <altitudeMode>absolute</altitudeMode>
+ </LookAt>
+
+</Document>
+</kml>
+	
