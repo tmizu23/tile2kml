@@ -17,8 +17,9 @@ Dynamic Google Earth SuperOverlay for Ciber Japan Data
  本体です。
 - `cjp.kml`  
  このKMLをGoogleErathで開きます。このKMLからtile2kml.phpを呼び出します。
-- `tile2kml_prezen.php`
-- `prezen.kml`
+- `tile2kml_prezen.php`  
+ TMSタイルを表示させる例です。
+- `prezen.kml`  
  TMSタイルを表示させる例です。
 
 設置方法
@@ -34,12 +35,12 @@ SuperOverlayの仕組みを使ったKMLを作成すれば、表示エリアの�
  
 関連情報
 --------
-- [http://ge-map-overlays.appspot.com/](http://ge-map-overlays.appspot.com/)
- OSM,GoogleMapsなどをGoogleEarthに表示させる例です。これにインスパイアされました。（マネました。）
-- [https://developers.google.com/kml/documentation/regions?hl=ja](https://developers.google.com/kml/documentation/regions?hl=ja)
- SuperOverlayの説明です。
-- [https://developers.google.com/kml/articles/phpmysqlkml?hl=ja](https://developers.google.com/kml/articles/phpmysqlkml?hl=ja)
- phpでkmlを出力する方法です。
+[http://ge-map-overlays.appspot.com/](http://ge-map-overlays.appspot.com/)  
+OSM,GoogleMapsなどをGoogleEarthに表示させる例です。これにインスパイアされました。（マネました。）
+[https://developers.google.com/kml/documentation/regions?hl=ja](https://developers.google.com/kml/documentation/regions?hl=ja)  
+SuperOverlayの説明です。
+[https://developers.google.com/kml/articles/phpmysqlkml?hl=ja](https://developers.google.com/kml/articles/phpmysqlkml?hl=ja)  
+phpでkmlを出力する方法です。
 
 ご注意
 ----------
