@@ -41,39 +41,39 @@ $phpurl = 'http://www.ecoris.co.jp/map/tile2kml.php';
 ///////////////////////////////地図設定/////////////////////////
 
 ////////  電子国土用   ////////////
-//(↓は電子国土の場合。レベル19以降は表示しないことにしてある)
+//(↓は電子国土の場合。レベル18は表示しない設定)
 $minx = 121.0;
 $maxx = 154.0;
 $miny = 16.5;
 $maxy = 46.0;
 $minz = 5;
-$maxz = 18;
+$maxz = 17;
 $TMS = 0;
 
 $ext = '.png';
 if($c==0){
- if($z<9){
+ if($z<=8){
   $baseurl = 'http://cyberjapandata.gsi.go.jp/sqras/all/JAIS/latest/';
- }elseif($z<12){
+ }elseif($z<=11){
   $baseurl = 'http://cyberjapandata.gsi.go.jp/sqras/all/BAFD1000K/latest/';
- }elseif($z<15){
+ }elseif($z<=14){
   $baseurl = 'http://cyberjapandata.gsi.go.jp/sqras/all/BAFD200K/latest/';
- }elseif($z<18){
+ }elseif($z<=17){
   $baseurl = 'http://cyberjapandata.gsi.go.jp/sqras/all/DJBMM/latest/';
- }elseif($z<19){
+ }elseif($z<=18){
   $baseurl = 'http://cyberjapandata.gsi.go.jp/sqras/all/FGD/latest/';
  }
 }elseif($c==1){
  if($z<9){
   $baseurl = 'http://cyberjapandata.gsi.go.jp/sqras/all/RELIEF/latest/';
- }elseif($z<12){
+ }elseif($z<=11){
   $baseurl = 'http://cyberjapandata2.gsi.go.jp/sqras/all/BAFD1000KG/latest/';
- }elseif($z<15){
+ }elseif($z<=14){
   $baseurl = 'http://cyberjapandata2.gsi.go.jp/sqras/all/BAFD200KG/latest/';
- }elseif($z<18){
+ }elseif($z<=17){
   $baseurl = 'http://cyberjapandata.gsi.go.jp/sqras/all/DJBMO/latest/';
-  $ext = '.jpg';
- }elseif($z<19){
+  $ext = '.jpg';//写真レイヤはjpg
+ }elseif($z<=18){
   $baseurl = 'http://cyberjapandata.gsi.go.jp/sqras/all/FGD/latest/';
  }
 }
@@ -83,6 +83,7 @@ $ypad = sprintf("%07d", $y);
 $xystr = substr($xpad,0,1).substr($ypad,0,1).'/'.substr($xpad,1,1).substr($ypad,1,1).'/'.substr($xpad,2,1).substr($ypad,2,1).'/'.substr($xpad,3,1).substr($ypad,3,1).'/'.substr($xpad,4,1).substr($ypad,4,1).'/'.substr($xpad,5,1).substr($ypad,5,1);
 $url = $baseurl . $z . '/' . $xystr . '/' . $xpad . $ypad . $ext;
 /////////  ここまで電子国土用 ////////////
+
 /*
 //XYZやTMSの場合はこちら
 $minx = 139.238869038526;
@@ -96,7 +97,10 @@ $ext = '.png';
 $baseurl = 'http://www.ecoris.co.jp/map/data/prezen/slide/';
 $url = $baseurl . $z . '/' . $x . '/' . $y . $ext;
 */
+
 ///////////////////////地図設定ここまで//////////////////////////////////////////
+
+
 
 $tileSize = 256;
 $originShift = 2 * pi() * 6378137 / 2.0;
