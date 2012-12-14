@@ -1,74 +1,72 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
-<Document>
-<open>1</open>
+    <Document>
+        <open>1</open>
+        <Style>
+            <ListStyle> <ItemIcon><href>http://portal.cyberjapan.jp/favicon.ico</href></ItemIcon> </ListStyle>
+        </Style>
+        <open>1</open>
+        <visibility>1</visibility>
+        <snippet maxlines="0"></snippet>
+        <name>電子国土</name>
+        <description>
+            <![CDATA[ <h3><font color="#330000">データ利用について</font></h3>
+<p><font color="#666666">この背景地図データは、国土地理院の電子国土Webシステムから配信されたものです。
+利用規約はこちらを御覧ください。
+<br><a href="http://portal.cyberjapan.jp/portalsite/kiyaku/index.html" target="_blank">http://portal.cyberjapan.jp/portalsite/kiyaku/index.html</a></font>
+<h3><font color="#330000">プログラムについて</font></h3>
+<p><font color="#666666">MIT License
+<br>Copyright 2012 Takayuki Mizutani ECORIS Inc.
+<br>詳細はこちらを御覧ください。<br>
+<a href="https://github.com/tmizu23/tile2kml" target="_blank">https://github.com/tmizu23/tile2kml</a></font>
 
-<Document>
-<Style id="cjp">
-<ListStyle>
-<listItemType>radioFolder</listItemType>
-<ItemIcon><href>http://portal.cyberjapan.jp/favicon.ico</href></ItemIcon>
-</ListStyle>
-</Style>
-<styleUrl>#cjp</styleUrl>
-<open>1</open>
-<visibility>1</visibility>
-<snippet maxlines="0"></snippet>
-<name>電子国土</name>
-<description>
-<![CDATA[
-<h3><font color="#330000">データ利用</font></h3>
-<p><font color="#666666">この背景地図等データは、国土地理院の電子国土Webシステムから配信されたものです。
-利用規約はこちらを御覧ください。<a href="http://portal.cyberjapan.jp/portalsite/kiyaku/index.html" target="_blank">http://portal.cyberjapan.jp/portalsite/kiyaku/index.html</a></font>
 ]]>
-</description>
-
- <NetworkLink>
-  <Style>
-  <ListStyle>
-  <listItemType>checkHideChildren</listItemType>
-  </ListStyle>
-  </Style>
-  <visibility>1</visibility>
-  <name>標準</name>
-  <Link>
-   <!-- #############    ユーザー設定    ############-->
-   <href>http://www.ecoris.co.jp/map/tile2kml.php</href>
-   <httpQuery>x=0&amp;y=0&amp;z=0&amp;&amp;c=0</httpQuery>
-  </Link>
- </NetworkLink>
- <NetworkLink>
-  <Style>
-  <ListStyle>
-  <listItemType>checkHideChildren</listItemType>
-  </ListStyle>
-  </Style>
-  <visibility>0</visibility>
-  <name>写真</name>
-  <Link>
-   <!-- #############    ユーザー設定    ############-->
-   <href>http://www.ecoris.co.jp/map/tile2kml.php</href>
-   <httpQuery>x=0&amp;y=0&amp;z=0&amp;&amp;c=1</httpQuery>
-  </Link>
- </NetworkLink>
-
-</Document>
-
- <ScreenOverlay>
-  <name>ロゴ</name>
-  <Icon><href>http://cyberjapan.jp/image/logo.gif</href></Icon>
-  <overlayXY x="0" y="0" xunits="fraction" yunits="fraction"/>
-  <screenXY x="0.01" y="0.01" xunits="fraction" yunits="fraction"/>
-  <rotationXY x="0" y="0" xunits="fraction" yunits="fraction"/>
-  <size x="0" y="0" xunits="fraction" yunits="fraction"/>
- </ScreenOverlay>
- <LookAt>
-  <longitude>135</longitude>
-  <latitude>35</latitude>
-  <altitude>2167000</altitude>
-  <altitudeMode>absolute</altitudeMode>
- </LookAt>
-
-</Document>
-	</kml>
-	
+        </description>
+        <Document>
+            <Style>
+                <ListStyle> <listItemType>radioFolder</listItemType> </ListStyle>
+            </Style>
+            <open>1</open>
+            <NetworkLink>
+                <Style>
+                    <ListStyle> <listItemType>checkHideChildren</listItemType> </ListStyle>
+                </Style>
+                <visibility>1</visibility>
+                <name>標準</name>
+                <Link>
+                <!-- ############# ユーザー設定 ############-->
+                <href>http://www.ecoris.co.jp/map/tile2kml.php</href>
+                <httpQuery>x=0&amp;y=0&amp;z=0&amp;&amp;c=0</httpQuery>
+                </Link>
+            </NetworkLink>
+            <NetworkLink>
+                <Style>
+                    <ListStyle> <listItemType>checkHideChildren</listItemType> </ListStyle>
+                </Style>
+                <visibility>0</visibility>
+                <name>写真</name>
+                <Link>
+                <!-- ############# ユーザー設定 ############-->
+                <href>http://www.ecoris.co.jp/map/tile2kml.php</href>
+                <httpQuery>x=0&amp;y=0&amp;z=0&amp;&amp;c=1</httpQuery>
+                </Link>
+            </NetworkLink>
+        </Document>
+        <ScreenOverlay>
+            <name>ロゴ</name>
+            <Icon>
+                <href>http://cyberjapan.jp/image/logo.gif</href>
+            </Icon>
+            <overlayXY x="0" y="0" xunits="fraction" yunits="fraction" />
+            <screenXY x="0.01" y="0.01" xunits="fraction" yunits="fraction" />
+            <rotationXY x="0" y="0" xunits="fraction" yunits="fraction" />
+            <size x="0" y="0" xunits="fraction" yunits="fraction" />
+        </ScreenOverlay>
+        <LookAt>
+            <longitude>135</longitude>
+            <latitude>35</latitude>
+            <altitude>2167000</altitude>
+            <altitudeMode>absolute</altitudeMode>
+        </LookAt>
+    </Document>
+</kml>
