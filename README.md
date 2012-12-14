@@ -51,6 +51,6 @@ phpでkmlを出力する方法です。
 
 ライセンス
 ----------
-MIT License(著作権表示および無保証ということでお願いします。)
+MIT License(著作権表示および無保証ということでお願いします。)  
 Copyright 2012 Takayuki Mizutani ECORIS Inc. 
 
