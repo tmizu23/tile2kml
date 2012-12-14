@@ -8,8 +8,8 @@ Dynamic Google Earth SuperOverlay for Ciber Japan Data
 
 作成例
 ------
-![表示例](https://raw.github.com/tmizu23/tile2kml/master/cjp.jpg)
-
+![表示例](https://raw.github.com/tmizu23/tile2kml/master/cjp.jpg)  
+![表示例](https://raw.github.com/tmizu23/tile2kml/master/iphone.png)  
 
 プログラム
 ------
