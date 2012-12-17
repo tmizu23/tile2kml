@@ -6,7 +6,7 @@ Dynamic Google Earth SuperOverlay for Ciber Japan Data
 電子国土の地図タイルをGoogle Earthで表示させるためのプログラムです。
 
 
-作成例
+表示例
 ------
 <img src="https://raw.github.com/tmizu23/tile2kml/master/cjp.jpg" height="300px" width="400px" />　
 <img src="https://raw.github.com/tmizu23/tile2kml/master/iphone.png" height="300px" width="220px" />
